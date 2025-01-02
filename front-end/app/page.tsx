@@ -70,7 +70,7 @@ export default function Home() {
               Empowering Investments Through Tokenization of Real World Assets
             </p>
             <div className="flex gap-4">
-              <Link href="https://github.com/rajeebkm/starklands" legacyBehavior>
+              <Link href="https://github.com/jitendragangwar123/Stark-Land" legacyBehavior>
                 <a className="flex justify-center items-center gap-2 px-4 py-2 text-sm bg-green-600 text-white rounded-md font-medium border-2 border-green-300 shadow-md hover:bg-green-700 hover:shadow-lg active:bg-green-700 active:shadow-sm focus:outline-none focus:ring-2 focus:ring-green-400 transition duration-700 ease-in-out">
                   <span>Welcome to SLS </span>
                   <span>

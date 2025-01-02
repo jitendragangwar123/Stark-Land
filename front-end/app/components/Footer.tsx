@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { BiChevronRight } from "react-icons/bi";
 import {
   FaFacebook,
