@@ -123,7 +123,7 @@ const PropertyGallery: React.FC = () => {
     const fetchProperties = async () => {
       try {
         const response = await fetch(
-          "http://localhost:8000/get-property-details"
+          "https://stark-lands-back-end.vercel.app/get-property-details"
         );
         if (!response.ok) throw new Error("Failed to fetch property data");
         const data = await response.json();

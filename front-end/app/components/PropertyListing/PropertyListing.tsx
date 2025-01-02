@@ -72,7 +72,7 @@ const ListingProject: React.FC = () => {
    
     try {
       const response = await fetch(
-        "http://localhost:8000/list-property",
+        "https://stark-lands-back-end.vercel.app/list-property",
         {
           method: "POST",
           body: formData,

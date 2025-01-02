@@ -68,7 +68,7 @@ const PropertyCard: React.FC<
                 setIsLoading(true);
                 toast.loading("Wait for Transactions...");
                 const storedTransactionsData = await fetch(
-                    "http://localhost:8000/storeTransactionsData",
+                    "https://stark-lands-back-end.vercel.app/storeTransactionsData",
                     {
                         method: "POST",
                         headers: {
@@ -160,7 +160,7 @@ const PortfolioOverview: React.FC = () => {
                 return;
             }
             const response = await fetch(
-                `http://localhost:8000/get-properties-by-user-address?userAddress=${account?.address}`
+                `https://stark-lands-back-end.vercel.app/get-properties-by-user-address?userAddress=${account?.address}`
             );
             if (!response.ok) {
                 toast.error("Investor don't have any asset");

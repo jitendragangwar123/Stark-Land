@@ -25,7 +25,7 @@ function TransactionsTable() {
     try {
       setLoading(true);
       const response = await fetch(
-        "http://localhost:8000/get-transactions-data",
+        "https://stark-lands-back-end.vercel.app/get-transactions-data",
         {
           method: "GET",
           headers: { "Content-Type": "application/json" },

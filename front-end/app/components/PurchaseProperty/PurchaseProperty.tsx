@@ -56,7 +56,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
       const status = 200;
       if (status === 200) {
         const storedTransactionsData = await fetch(
-          "http://localhost:8000/store-transactions-data",
+          "https://stark-lands-back-end.vercel.app/store-transactions-data",
           {
             method: "POST",
             headers: {
@@ -179,7 +179,7 @@ const PropertyDetails: React.FC = () => {
       if (title) {
         try {
           const response = await fetch(
-            `http://localhost:8000/get-property-details-by-title?title=${title}`,
+            `https://stark-lands-back-end.vercel.app/get-property-details-by-title?title=${title}`,
             {
               method: "GET",
               headers: { "Content-Type": "application/json" },
